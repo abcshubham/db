@@ -1,0 +1,27 @@
+
+<table class="table table-striped">
+  <thead>
+<tr>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Descrption</th>
+  <th>Price</th>
+  <th>Rating</th>
+  <th>Action</th>
+</tr>
+</thead>
+<tbody>
+ <tr *ngFor="let item of products">
+  <td>{{item.Id}}</td>
+  <td>{{item.Title}}</td>
+  <td>{{item.Descrption}}</td>
+  <td>{{item.Price}}</td>
+  <td>{{item.Rating}}</td>
+  <td>
+    <button (click)=deleteProduct(item)>delete</button>
+  </td>
+
+</tr> 
+</tbody>
+</table>
+  
